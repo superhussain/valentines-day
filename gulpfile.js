@@ -58,9 +58,10 @@ gulp.task('serve', function() {
           }
         }
       },
-      directoryListing: true,
+      host: '192.168.0.108',
+      directoryListing: false,
       open: true,
-      fallback: 'index.html'
+      path: '/'
     }));
 });
 
