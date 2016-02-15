@@ -7,9 +7,10 @@ Howdy, stranger! Want to woo your beloved? Well, you've come to the right place!
 First we need to have the right crap installed. Can't go starting a fire without any matches now can we? Here's what you need:
 
 - a text editor (No, notepad.exe won't suffice.)
-- a browser
-- npm
-- gulp
+- a browser (Chrome is superior!)
+- npm (Node.js package manager, comes with node.js)
+- gulp (My build system of choice.)
+- LiveReload browser extension
 
 ## Getting started
 
