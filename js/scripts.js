@@ -1,14 +1,13 @@
-var name, pass, note;
+var name, pass, md5, note;
 
 (function($) {
-  function formSubmit() {
-    return false;
-  };
   $("section form").submit(function(e) {
     e.preventDefault();
-    name = $('section.main form input[name="name"]').val();
-    pass = $('section.main form input[name="pass"]').val();
+    name = $('section.main form input[name="name"]').val().toLowerCase();
+    pass = $('section.main form input[name="pass"]').val().toLowerCase();
+    md5 = $.md5(name, pass, true);
     console.log(name + ':' + pass);
+    console.log(md5);
     theNote();
     $('.note .head span').text(name);
     $('.note .the-note').html(note);
@@ -20,17 +19,14 @@ var name, pass, note;
     } else {
       $('.main').slideUp(500);
       setTimeout(function() {
+        $('.wait').slideDown('slow');
+      }, 750);
+      setTimeout(function() {
+        $('.wait').slideUp('slow');
+      }, 2500);
+      setTimeout(function() {
         $('.note').slideDown('slow');
-      }, 500);
+      }, 3500);
     }
   });
 })(jQuery);
-
-function theNote() {
-  if (["hi", "Hi", "HI"].indexOf(name) + 1 && pass == 'hi') {
-    note = "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi non explicabo iure id veniam, quasi saepe quis molestiae ut, aperiam eius fugit aspernatur doloremque nam doloribus cumque. Eveniet, enim, nam.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi non explicabo iure id veniam, quasi saepe quis molestiae ut, aperiam eius fugit aspernatur doloremque nam doloribus cumque. Eveniet, enim, nam.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi non explicabo iure id veniam, quasi saepe quis molestiae ut, aperiam eius fugit aspernatur doloremque nam doloribus cumque. Eveniet, enim, nam.</p>"
-  } else {
-    name = '';
-    pass = '';
-  }
-}

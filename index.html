@@ -14,13 +14,17 @@
 <body>
 
   <section class="main">
-    <h1 class="head">Hussain's <span>VDAY</span> Surprise!</h1>
-    <form onsubmit="return formSubmit()">
-      <input type="text" name="name" placeholder="First Name">
+    <h1 class="head">Hussain's<br><span>VDAY Surprise</span>!</h1>
+    <form onsubmit="formSubmit()">
+      <input type="text" name="name" placeholder="First Name" autofocus>
       <input type="password" name="pass" placeholder="Pass code">
       <input type="submit" value="Continue">
     </form>
     <p class="error">Please try again!</p>
+  </section>
+
+  <section class="wait">
+    <h1 class="head">Wait for it...</h1>
   </section>
 
   <section class="note">
@@ -36,6 +40,14 @@
   </footer>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="js/build/jquery.md5.js"></script>
   <script src="js/build/scripts.js"></script>
+  <script src="js/build/notes.js"></script>
+  <script>
+    function formSubmit() {
+      console.log('Form submitted.');
+      return false;
+    };
+  </script>
 </body>
 </html>

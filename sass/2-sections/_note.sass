@@ -10,8 +10,25 @@ section.note
     color: lighten($accent, 20%)
   .the-note
     padding-top: 0.8em
-    text-align: center
-    color: lighten($accent, 35%)
+    text-align: left
+    color: lighten($accent, 30%)
     font-size: 1.2em
+    font-weight: 300
     h1,h2,h3,h4,h5,h6,p
-      margin: 0.4em
+      margin: 1em
+      line-height: 1.4
+    blockquote
+      text-align: left
+      color: lighten($accent, 25%)
+      border-left: 5px solid
+      padding: 0 1.5em
+      font-size: 0.8em
+    .icon
+      font-style: normal
+
+@media (max-width: 660px)
+  section.note
+    h2.sub
+      font-size: 1em
+    .the-note
+      font-size: 1em

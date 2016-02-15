@@ -90,7 +90,7 @@ body
 body
   font-family: 'Roboto', sans-serif
   background: linear-gradient(to bottom, rgba($accent,0.8) 0%,rgba($accent,0.8) 100%), url(../img/bg.gif)
-  padding: 2.5em
+  padding: 2.5em 2.5em 1em 2.5em
   h1.head
     font-size: 3em
     text-align: center
@@ -105,6 +105,12 @@ body
     padding-bottom: 3em
   section.main
     display: block
+
+@media (max-width: 660px)
+  body
+    padding: 1.5em
+    h1.head
+      font-size: 2em
 
 // clearfix hack
 
