@@ -9,7 +9,11 @@ var name, pass, md5, note;
     console.log(name + ':' + pass);
     console.log(md5);
     theNote();
-    $('.note .head span').text(name);
+    if (name == 'hi') {
+      $('.note .head span').text("stranger");
+    } else {
+      $('.note .head span').text(name);
+    }
     $('.note .the-note').html(note);
     if (name == '' || pass == '') {
       $('.main .error').slideToggle(500);
