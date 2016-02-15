@@ -31,7 +31,7 @@ The dummy data is pretty sweet, but your bae ain't no dummy! Let's write her a p
 
 Wait you thought I was gonna give you tips on writing love letters? My love letters gets all the women excited! We'll save that for a premium course, five easy payments of $69.99!
 
-Okay so what we wanna do is open up the scripts.js file in the js folder. All the way at the bottom you'll find the note for the dummy. Let's copy the entire `theNote()` function and move that into another file called `notes.js`. Keep things clean, ya know? 
+Okay so what we wanna do is open up the scripts.js file in the js folder. All the way at the bottom you'll find the note for the dummy. Let's copy the entire `theNote()` function and move that into another file called `notes.js`. Keep things clean, ya know? Also make sure you uncomment the script at the bottom linking to the note.js file in `index.html`.
 
 Let's deconsturct this function...
 
