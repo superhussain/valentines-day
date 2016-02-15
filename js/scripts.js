@@ -30,3 +30,13 @@ var name, pass, md5, note;
     }
   });
 })(jQuery);
+
+function theNote() {
+  // if ('hi'.indexOf(name) + 1 && pass == 'hi') {
+  if (md5 === 'E8ETðnö*¶ÇÁÕ') { // hi:hi
+    note = "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam ut vel voluptates fugit unde at ipsum incidunt nulla consectetur, magnam sint, autem numquam odit provident dolore quia est velit excepturi.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam ut vel voluptates fugit unde at ipsum incidunt nulla consectetur, magnam sint, autem numquam odit provident dolore quia est velit excepturi.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam ut vel voluptates fugit unde at ipsum incidunt nulla consectetur, magnam sint, autem numquam odit provident dolore quia est velit excepturi.</p>"
+  } else {
+    name = '';
+    pass = '';
+  }
+}
